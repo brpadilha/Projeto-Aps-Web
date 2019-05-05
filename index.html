@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>APS 2 - PROJETO DE SISTEMAS EM INTERNET I</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/resume.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Bruno Padilha Rangel</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/perfil2.jpeg" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#introducao">Introdução</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#numeroum">Soma dos N Pares</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#numerodois">Alunos e Notas</a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p- p-lg- d-flex align-items-center" id="introducao">
+      <div class="w-100">
+          <h1 class="mb-0">APS
+            <span class="text-primary">2</span> PROJETO DE SISTEMAS EM INTERNET I
+          </h1>
+          <p class="lead mb-5">Aps proposta pelo professor Élisson na matéria de PROJETO DE SISTEMAS EM INTERNET I, <br>onde
+            a mesma serve para
+            desenvolvimento do aluno nas ferramenteas JavaScript e Bootstrap.</p>
+          <div class="social-icons">
+          </div>
+      </div>
+
+    </section>
+
+    <hr class="m-0">
+  
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="numeroum">
+     
+      <div class="w-100">
+        <h2 class="mb-5">Atividade <span class="text-primary">1</span> - Soma dos N pares</h2>
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Soma dos N Pares</h3>
+            <div class="subheading mb-3">Dado um numero inteiro positivo N, imprimir os N primeiros naturais pares.
+            </div>
+            <div class="container-fluid padding">
+              <input type="text" placeholder="Nota" id="NumberOne">
+              <button onclick="SomaPares()">Verificar</button>
+            </div>
+            <br>
+            <div class="container-fluid padding">
+              <div class="container-fluid padding ">
+
+                <table class="table table-nota table-bordered" id="TabelaPostarPares">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="row">Pares encontrados</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <th>-</th>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="container-fluid padding">
+                <table class="table table-nota table-bordered">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="row">Soma dos Pares</th>
+                    </tr>
+                  </thead>
+                  <tbody id="TabelaPostarSomaPares">
+                    <th>-</th>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <hr class="m-0">
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="numerodois">
+      <div class="w-100">
+        <h2 class="mb-5">Atividade <span class="text-primary">2</span> - dos Melhores Alunos</h2>
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Maior e Menor Nota</h3>
+            <div class="subheading mb-3">Dado nome e nota de cada aluno de uma turma.<br>
+              Determinar a maior e a menor nota obtidas por esta turma.
+            </div>
+            <div class="container-fluid padding">
+              <input type="text" placeholder="Nome" id="Nome">
+              <input type="number" placeholder="Nota" id="Nota" onchange="MaiorEMenor()">
+              <button onclick="MaiorEMenor()">Enviar</button>
+            </div>
+            <br>
+            <div class="container-fluid padding">
+              <div class="container-fluid padding ">
+      
+                <table class="table table-nota table-bordered" >
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="row">Maior Nota</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tabelaMaiorNota">
+                    <th>-</th>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="container-fluid padding">
+
+                <table class="table table-nota table-bordered">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="row">Menor Nota</th>
+                      
+                    </tr>
+                  </thead>
+                  <tbody id="tabelaMenorNota">
+                    <th>-</th>
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
+            
+            <div class="container-fluid padding">
+              <table class="table table-bordered table-turma " >
+                <thead class="thead-light" id='tabelaturma'>
+                  <tr>
+                    <th scope="row">#</th>
+                    <th scope="row">Nome</th>
+                    <th scope="row">Nota</th>
+                  </tr>
+                </thead>
+                
+              </table>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+  <script src="js/aps2.js"></script>
+
+</body>
+
+</html>
