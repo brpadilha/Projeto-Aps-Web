@@ -1,6 +1,7 @@
 'use strict'
 
 function SomaPares() {
+    TabelaPostarPares.innerHTML = ``;
     let nums = document.getElementById("NumberOne").value;
     let NumerosPares = InserePares(nums);
     let soma = SomandoPares(NumerosPares);
